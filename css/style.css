@@ -1,0 +1,127 @@
+.navber-items:hover{
+  border-bottom: 3px solid black;
+}
+a{
+  text-decoration: none;
+}
+.hero{
+height:100vh;
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment: fixed;
+background-position: center ;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.wrapper .static-text{
+  font-size: 60px;
+  font-weight: 500;
+  
+}
+.wrapper .dynamic-texts{
+  line-height: 90px;
+  height: 90px;
+  margin-left:;
+  overflow: hidden;
+}
+.dynamic-texts li{
+  list-style:none;
+  font-weight: 500;
+  font-size: 60px;
+  color: #00ff00;
+  animation: slide 6s steps(4) infinite;
+  position: relative;
+  top:0;
+}
+@keyframes slide{
+  100%{
+    top:-360px;
+  }
+}
+.dynamic-texts li span{
+  position: relative;
+}
+.dynamic-texts li span::after{
+  
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid orange;
+  left: 0;
+  animation: typing 1.5s steps(13) infinite;
+  background: black 2px solid;
+}
+@keyframes typing{
+  100%{
+    left: 100%;
+    margin: 0 -35 0 35;
+  }
+}
+.service-box{
+  background-color: white;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.a:hover .ico-circale{
+  color: white;
+  background-color: #0d6efd;
+  box-shadow: 0 0 0 10px orange;
+  transition: 0.5s;
+}
+
+.ico-circale{
+  height: 100px;
+  width: 100px;
+  size: 5rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px #0d6efd;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.ico-circaleb{
+  height: 100px;
+  width: 100px;
+  size: 5rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px orange;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.ico{
+  height: 40px;
+  width: 40px;
+  size: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 5px #0d6efd;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.ico:hover{
+  color: white;
+  background-color: #0d6efd;
+  box-shadow: 0 0 0 5px orange;
+  transition: 0.5s;
+}
